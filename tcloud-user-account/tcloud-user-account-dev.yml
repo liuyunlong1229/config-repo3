@@ -19,8 +19,8 @@ spring:
       username: root
       #password: root
       password: 123456
- #    schema: classpath:db/schema.sql 启动初始化创建schema的脚本
- #    data=classpath:db/data.sql 启动时初始化数据的脚本
+      schema: classpath:db/schema.sql #启动初始化创建schema的脚本
+      data: classpath:db/data.sql #启动时初始化数据的脚本
       
       hikari:
         maximumPoolSize: 10
@@ -39,7 +39,7 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
-    
+
 feign:
   hystrix: 
     enabled: true
